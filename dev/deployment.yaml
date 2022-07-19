@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: saidamo/myweb:0.0.2
+        image: nginx
         ports:
-          - containerPort: 8080
+          - containerPort: 80
