@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: tomcat
   labels:
     app: nginx
 spec:
@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
-        image: nginx
+      - name: tomcat
+        image: saidamo/myweb:0.0.2
         ports:
-          - containerPort: 80
+          - containerPort: 8080
