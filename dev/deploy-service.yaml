@@ -22,9 +22,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: tomcat
-  labels: 
-    app: tomcat    
+  name: tomcat   
 spec:
   type: NodePort 
   selector:
